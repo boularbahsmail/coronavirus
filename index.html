@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <style type="text/css">
+    select {
+    position: relative;
+    padding: 12px 14px;
+    border-radius: 2px;
+    outline: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: #262626;
+    cursor: pointer;
+    }
+            #cases {
+            color: rgb(255, 183, 0);
+        }
+        #deaths {
+            color: rgb(236, 15, 15);
+        }
+        #recovered {
+            color: rgb(67, 192, 67);
+        }
+        #active{
+            color: #17a2b8;
+        }
+        h3 {
+            color: gray;
+        }
+        #big {
+            width: 70%;
+            background-color: red;
+        }
+        .bg-brown {
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+   <center> <div class="container">
+    <div class="container-fluid bg-light p-5 text-center my-3">
+        <h1 class="titlehh">Covid-19</h1>
+        <h5 class="text-muted">
+          A simple web project to show any news about corona virus cases around the world !
+        </h5>
+      </div>
+        <select id="select">
+            <option selected disabled>
+                Select country
+            </option>
+        </select><br><br>
+        <div class="wrapper">
+
+        </div>
+    </div>
+    <footer class="footer mt-5 py-3 bg-light" id="big">
+        <div class="container text-center">
+          <span class="text-muted" id="footer"> © boularbah ismail - 2020</span>
+        </div>
+      </footer>
+    </center>
+    <script src="main.js"></script>
+</body>
+</html>
