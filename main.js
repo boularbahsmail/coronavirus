@@ -49,12 +49,12 @@ function manipulateData(data) {
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h2 class="mb-2">New cases for today</h2>
+                        <h3 class="mb-2">New cases for today</h3>
                         <p>${total_new_cases_today}</p>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h2 class="mb-2">New deaths for today</h2>
+                        <h3 class="mb-2">New deaths for today</h3>
                         <p>${total_new_deaths_today}</p>
                     </div>
 
