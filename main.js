@@ -93,3 +93,8 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
     // if there is an error in fetching data
     err.alert("Feiled to fetch data !");
 })
+
+var time = new Date(),
+    year = time.getFullYear();
+
+document.querySelector('#footer').textContent = "© boularbah ismail - " + year;
