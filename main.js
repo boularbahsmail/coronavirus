@@ -74,6 +74,9 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
 })
 .then(data => {
     manipulateData(data);
+})
+.catch(err => {
+    console.log("Error fetching data " + err);
 });
 // current year
 var time = new Date(),
