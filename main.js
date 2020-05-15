@@ -44,33 +44,32 @@ function manipulateData(data) {
                         <p>${totalActive_today}</p>
                     </div>
                 
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id='cc'>
+                    <h2 class="mb-2" id="deaths">Unresolved</h2>
+                    <p>${totalUnresolved}</p>
+                </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
                         <h2 class="mb-2" id="deaths">Deaths</h2>
                         <p>${total_new_deaths_today}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id='cc'>
                         <h3 class="mb-2">New cases for today</h3>
                         <p>${totalCases}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id='cc'>
                         <h3 class="mb-2">New deaths for today</h3>
                         <p>${totalDeaths}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
-                    <h3 class="mb-2">Unresolved</h3>
-                    <p>${totalUnresolved}</p>
-                </div>
-
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id='cc'>
                         <h2 class="mb-2" id="active">Active cases</h2>
                         <p>${totalSerious}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id='cc'>
                         <h2 class="mb-2">Serious cases</h2>
                         <p>${totalRecovered}</p>
                     </div>
@@ -83,11 +82,9 @@ function manipulateData(data) {
     }
 }
 // fetch API
-const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=ALL')
-.then(response => {    // handle response data
+const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=ALL').then(response => {    // handle response data
     return response.json();
-})
-.then(data => {
+}).then(data => {
     manipulateData(data);
 });
 // current year
