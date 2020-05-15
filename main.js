@@ -24,7 +24,7 @@ function manipulateData(data) {
             if(e.target.value == signleData.title) {
                 let totalCases = signleData.total_cases;
                 let totalRecovered = signleData.total_recovered;
-                let totalUnresolved = signleData.total_unresolved;
+                // let totalUnresolved = signleData.total_unresolved;
                 let totalDeaths = signleData.total_deaths;
                 let total_new_cases_today = signleData.total_new_cases_today;
                 let total_new_deaths_today = signleData.total_new_deaths_today;
