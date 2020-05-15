@@ -24,7 +24,7 @@ function manipulateData(data) {
             if(e.target.value == signleData.title) {
                 let totalCases = signleData.total_cases;
                 let totalRecovered = signleData.total_recovered;
-                // let totalUnresolved = signleData.total_unresolved;
+                let totalUnresolved = signleData.total_unresolved;
                 let totalDeaths = signleData.total_deaths;
                 let total_new_cases_today = signleData.total_new_cases_today;
                 let total_new_deaths_today = signleData.total_new_deaths_today;
@@ -50,22 +50,27 @@ function manipulateData(data) {
                         <p>${total_new_deaths_today}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
                         <h3 class="mb-2">New cases for today</h3>
                         <p>${totalCases}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
                         <h3 class="mb-2">New deaths for today</h3>
                         <p>${totalDeaths}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
+                    <h3 class="mb-2">Unresolved</h3>
+                    <p>${totalUnresolved}</p>
+                </div>
+
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
                         <h2 class="mb-2" id="active">Active cases</h2>
                         <p>${totalSerious}</p>
                     </div>
 
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="cc">
                         <h2 class="mb-2">Serious cases</h2>
                         <p>${totalRecovered}</p>
                     </div>
@@ -84,9 +89,6 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
 })
 .then(data => {
     manipulateData(data);
-})
-.catch(err => {
-    console.log("Error Fetching Data !" + err);
 });
 // current year
 var time = new Date(),
