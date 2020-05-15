@@ -77,6 +77,7 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
 })
 .catch(err => {
     console.log("Error fetching data " + err);
+    alert('Error getting Data !');
 });
 // current year
 var time = new Date(),
@@ -84,7 +85,7 @@ var time = new Date(),
 
 document.querySelector('#footer').textContent = "© boularbah ismail - " + year;
 
-// console.log(fetchData);
+ console.log(fetchData);
 
 /*
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
