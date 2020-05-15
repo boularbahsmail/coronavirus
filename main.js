@@ -36,42 +36,28 @@ function manipulateData(data) {
                 <div class="row justify-content-center">
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
                         <h2 class="mb-2" id="cases">Cases</h2>
-                        <p>${totalCases}</p>
-                    </div>
-
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h2 class="mb-2" id="recovered">Recovered</h2>
-                        <p>${totalRecovered}</p>
-                    </div>
-                    
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h2 class="mb-2">Unresolved</h2>
-                        <p>${totalUnresolved}</p>
-                    </div>
-
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h2 class="mb-2" id="deaths">Deaths</h2>
-                        <p>${totalDeaths}</p>
-                    </div>
-
-                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h3 class="mb-2">New cases for today</h3>
                         <p>${total_new_cases_today}</p>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h3 class="mb-2">New deaths for today</h3>
+                        <h2 class="mb-2" id="recovered">Recovered</h2>
+                        <p>${totalActive_today}</p>
+                    </div>
+                
+
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                        <h2 class="mb-2" id="deaths">Deaths</h2>
                         <p>${total_new_deaths_today}</p>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h2 class="mb-2" id="active">Active cases</h2>
-                        <p>${totalActive_today}</p>
+                        <h3 class="mb-2">New cases for today</h3>
+                        <p>${totalCases}</p>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
-                        <h2 class="mb-2">Serious cases</h2>
-                        <p>${totalSerious}</p>
+                        <h3 class="mb-2">New deaths for today</h3>
+                        <p>${totalDeaths}</p>
                     </div>
                 `;
                 // insert divs elements
@@ -88,13 +74,28 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
 })
 .then(data => {
     manipulateData(data);
-})
-.catch(err => {
-    // if there is an error in fetching data
-    err.alert("Feiled to fetch data !");
-})
+});
 // current year
 var time = new Date(),
     year = time.getFullYear();
 
 document.querySelector('#footer').textContent = "© boularbah ismail - " + year;
+
+// console.log(fetchData);
+
+/*
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                        <h2 class="mb-2">Unresolved</h2>
+                        <p>${totalUnresolved}</p>
+                    </div>
+
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                        <h2 class="mb-2">Serious cases</h2>
+                        <p>${totalSerious}</p>
+                    </div>
+    
+                    <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown">
+                        <h2 class="mb-2" id="active">Active cases</h2>
+                        <p>${totalRecovered}</p>
+                    </div>
+*/
