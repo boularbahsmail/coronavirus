@@ -70,7 +70,7 @@ function manipulateData(data) {
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2">Serious cases</h2>
+                        <h2 class="mb-2" id="qrib">Serious cases</h2>
                         <p>${totalSerious}</p>
                     </div>
                 `;
