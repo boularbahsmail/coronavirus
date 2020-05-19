@@ -8,3 +8,47 @@ body {
     box-shadow: 0 0 5px lightgray;
     transition: 0.3s;
 }
+
+select {
+    position: relative;
+    padding: 12px 14px;
+    border-radius: 2px;
+    outline: none;
+    height: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    color: rgb(85, 85, 85);
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    box-shadow: 0 0 5px lightgray;
+    }
+.bg-light {
+    background: transparent;
+}
+#cases {
+    color: rgb(255, 183, 0);
+}
+#deaths {
+    color: rgb(236, 15, 15);
+}
+#recovered {
+    color: rgb(67, 192, 67);
+}
+#active{
+    color: #17a2b8;
+}
+h3,h2 {
+    color: gray;
+}
+#big {
+    width: 70%;
+    background-color: transparent;
+}
+.bg-brown {
+    height: auto;
+}
+#qrib {
+    color:rgb(255, 51, 0);
+}

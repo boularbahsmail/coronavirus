@@ -36,42 +36,42 @@ function manipulateData(data) {
                 <div class="row justify-content-center">
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h2 class="mb-2" id="cases">Cases</h2>
-                        <p>${totalCases}</p>
+                        <h5>${totalCases}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h2 class="mb-2" id="recovered">Recovered</h2>
-                        <p>${totalRecovered}</p>
+                        <h5>${totalRecovered}</h5>
                     </div>
                 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h2 class="mb-2" id="deaths">Deaths</h2>
-                        <p>${totalDeaths}</p>
+                        <h5>${totalDeaths}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                     <h2 class="mb-2">Unresolved cases</h2>
-                    <p>${totalUnresolved}</p>
+                    <h5>${totalUnresolved}</h5>
                 </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h3 class="mb-2">New cases for today</h3>
-                        <p>${total_new_cases_today}</p>
+                        <h5>${total_new_cases_today}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h3 class="mb-2">New deaths for today</h3>
-                        <p>${total_new_deaths_today}</p>
+                        <h5>${total_new_deaths_today}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h2 class="mb-2" id="active">Active cases</h2>
-                        <p>${totalActive_today}</p>
+                        <h5>${totalActive_today}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h2 class="mb-2" id="qrib">Serious cases</h2>
-                        <p>${totalSerious}</p>
+                        <h5>${totalSerious}</h5>
                     </div>
                 `;
                 // insert divs elements
