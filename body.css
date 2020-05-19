@@ -1,3 +1,10 @@
 body {
     background-image: url(background.svg);
 }
+
+#card {
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px lightgray;
+    transition: 0.3s;
+}
