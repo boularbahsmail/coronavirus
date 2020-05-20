@@ -93,7 +93,8 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
     document.querySelector('.my-3').style.filter = "blur(15px)";
     document.querySelector('#select').style.filter = "blur(15px)";
     document.querySelector('#footerhh').style.filter = "blur(15px)";
-    document.querySelector('..warning-msg').style.display = "block";
+    document.querySelector('.warning-msg').style.display = "block";
+    document.querySelector('.wrapper').style.filter = "blur(15px)";
 });
 // current year
 var time = new Date(),
