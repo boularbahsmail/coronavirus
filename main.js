@@ -90,9 +90,10 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
 .catch(err => {
     // alert('Check your internet connection and try again !');
     console.log("Error fetching data " + err);
-    document.querySelector('.warning-msg').style.display = "block";
-    document.querySelector('.container').style.filter = "blur(15px)";
+    document.querySelector('.my-3').style.filter = "blur(15px)";
+    document.querySelector('#select').style.filter = "blur(15px)";
     document.querySelector('#footerhh').style.filter = "blur(15px)";
+    document.querySelector('..warning-msg').style.display = "block";
 });
 // current year
 var time = new Date(),
