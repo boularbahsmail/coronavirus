@@ -86,6 +86,13 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
     return response.json();
 }).then(data => {
     manipulateData(data);
+})
+.catch(err => {
+    // alert('Check your internet connection and try again !');
+    console.log("Error fetching data " + err);
+    document.querySelector('.warning-msg').style.display = "block";
+    document.querySelector('.container').style.filter = "blur(15px)";
+    document.querySelector('#footerhh').style.filter = "blur(15px)";
 });
 // current year
 var time = new Date(),

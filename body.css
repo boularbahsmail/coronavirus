@@ -52,3 +52,18 @@ h3,h2 {
 #qrib {
     color:rgb(255, 51, 0);
 }
+
+.warning-msg {
+    color: #9F6000;
+    background-color: #FEEFB3;
+    padding: 4%;
+    border-radius: 5px;
+    width: 40%;
+    box-shadow: 0 0 5px lightgray;
+    font-size: 20px;
+    display: none;
+    transition: 0.5s;
+}
+.warning-msg i {
+    font-size: 45px;
+}
