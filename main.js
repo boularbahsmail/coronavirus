@@ -52,7 +52,7 @@ function manipulateData(data) {
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                     <h2 class="mb-2">Unresolved cases</h2>
                     <h5>${totalUnresolved}</h5>
-                </div>
+                    </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
                         <h3 class="mb-2">New cases for today</h3>
@@ -85,10 +85,11 @@ function manipulateData(data) {
 const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=ALL').then(response => {    // handle response data
     return response.json();
 }).then(data => {
+    // data fetched
     manipulateData(data);
 })
 .catch(err => {
-    // alert('Check your internet connection and try again !');
+    // error fetching data => error div
     console.log("Error fetching data " + err);
     document.querySelector('.my-3').style.filter = "blur(15px)";
     document.querySelector('#select').style.filter = "blur(15px)";
