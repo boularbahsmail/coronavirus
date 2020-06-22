@@ -73,7 +73,7 @@ h3,h2 {
 }
 
 body::-webkit-scrollbar {
-  width: 0.4em;
+  width: 0.2em;
   background-color: white;
   border-radius: 0px;
 }
