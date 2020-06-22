@@ -35,17 +35,17 @@ function manipulateData(data) {
                 let cardTemplate = `
                 <div class="row justify-content-center">
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="cases">Cases</h2>
+                        <h2 class="mb-2" id="cases">Total <br> cases</h2>
                         <h5>${totalCases}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="recovered">Recovered</h2>
+                        <h2 class="mb-2" id="recovered">Total <br> recovered</h2>
                         <h5>${totalRecovered}</h5>
                     </div>
                 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="deaths">Deaths</h2>
+                        <h2 class="mb-2" id="deaths">Total <br> deaths</h2>
                         <h5>${totalDeaths}</h5>
                     </div>
 
@@ -65,12 +65,12 @@ function manipulateData(data) {
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="active">Active cases</h2>
+                        <h2 class="mb-2" id="active">Total <br> active cases</h2>
                         <h5>${totalActive_today}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="qrib">Serious cases</h2>
+                        <h2 class="mb-2" id="qrib">Total <br> serious cases</h2>
                         <h5>${totalSerious}</h5>
                     </div>
                 `;
