@@ -11,13 +11,12 @@ body {
     box-shadow: 0 0 5px lightgray;
     transition: 0.3s;
 }
-
 select {
     position: relative;
     padding: 12px 14px;
     border-radius: 2px;
     outline: none;
-    height: 50px;
+    height: 55px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
@@ -26,7 +25,7 @@ select {
     cursor: pointer;
     border: 1px solid lightgray;
     box-shadow: 0 0 5px lightgray;
-    }
+}
 .bg-light {
     background: transparent;
 }
