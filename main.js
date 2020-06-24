@@ -102,6 +102,6 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
 var time = new Date(),
     year = time.getFullYear();
 
-document.querySelector('#footer').textContent = "© boularbah ismail - " + year;
+document.querySelector('#footer').textContent = "© " + year + " boularbah ismail";
 
 // console.log(fetchData);
