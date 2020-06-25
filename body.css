@@ -13,18 +13,18 @@ body {
 }
 select {
     position: relative;
-    padding: 12px 14px;
-    border-radius: 2px;
+    padding: 12px 15px;
+    border-radius: 5px;
     outline: none;
-    height: 55px;
+    height: 60px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
     color: rgb(85, 85, 85);
     font-weight: 600;
     cursor: pointer;
-    border: 1px solid lightgray;
-    box-shadow: 0 0 5px lightgray;
+    border: 1px solid #ddf;
+    box-shadow: 0 0 5px #eeefee;
 }
 .bg-light {
     background: transparent;
@@ -48,9 +48,6 @@ h3,h2 {
     width: 70%;
     background-color: transparent;
 }
-#footer {
-    color: yellow;
-}
 .bg-brown {
     height: auto;
 }
@@ -73,16 +70,15 @@ h3,h2 {
 .warning-msg i {
     font-size: 45px;
 }
-
-body::-webkit-scrollbar {
-  width: 0.2em;
+::-webkit-scrollbar {
+  width: 0.3em;
   background-color: white;
   border-radius: 0px;
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background:#b9b7b7;
   outline: 1px solid white;
   border-radius: 0px;
