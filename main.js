@@ -35,7 +35,7 @@ function manipulateData(data) {
                 let cardTemplate = `
                 <div class="row justify-content-center">
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="cases">Total <br> cases</h2>
+                    <h2 class="mb-2" id="cases">Total <br> cases</h2>
                         <h5>${totalCases}</h5>
                     </div>
 
@@ -65,12 +65,12 @@ function manipulateData(data) {
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="active">Total <br> active cases</h2>
+                        <h2 class="mb-2" id="active">Total active cases</h2>
                         <h5>${totalActive_today}</h5>
                     </div>
 
                     <div class="card pl-3 pr-5 py-2 mx-2 my-2 col-md-3 bg-brown" id="card">
-                        <h2 class="mb-2" id="qrib">Total <br> serious cases</h2>
+                        <h2 class="mb-2" id="qrib">Total serious cases</h2>
                         <h5>${totalSerious}</h5>
                     </div>
                 `;
@@ -104,3 +104,4 @@ var time = new Date(),
 
 document.querySelector('#footer').textContent = "© " + year + " I-COVID-19 | BOULARBAH ISMAIL";
 // console.log(fetchData);
+
