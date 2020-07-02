@@ -84,3 +84,15 @@ h3,h2 {
   border-radius: 0px;
   transition: 1s;
 }
+
+@media only screen and (max-width: 1500px) {
+    #top {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+        #bottom {
+        margin-top:-14%;
+    }
+}
