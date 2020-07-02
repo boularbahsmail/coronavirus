@@ -85,6 +85,10 @@ h3,h2 {
   transition: 1s;
 }
 
+#center {
+    display: none;
+}
+
 @media only screen and (max-width: 1500px) {
     #top {
         display: none;
@@ -92,7 +96,13 @@ h3,h2 {
 }
 
 @media only screen and (max-width: 900px) {
-        #bottom {
+    #bottom {
         margin-top:-14%;
+    }
+    #center {
+        display: block;
+        height: 170px;
+        width: 170px;
+        margin-top: -8%;
     }
 }
