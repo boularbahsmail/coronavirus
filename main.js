@@ -102,6 +102,7 @@ const fetchData = fetch('https://api.thevirustracker.com/free-api?countryTotals=
 var time = new Date(),
     year = time.getFullYear();
 
-document.querySelector('#footer').textContent = "© " + year + " I-COVID-19 | BOULARBAH ISMAIL";
+var foo = document.querySelector('#footer');
+foo.textContent = "© " + year + " I-COVID-19 | BOULARBAH ISMAIL";
 // console.log(fetchData);
 

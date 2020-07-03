@@ -2,9 +2,12 @@
     transition: 0.3s;
 }
 body {
-    background-image: url("images/background.svg");
+    /*background-image: url("images/background.svg");*/
+    margin: 2% 0;
 }
-
+#bottom {
+    display: none;
+}
 #card {
     background-color: white;
     border: none;
@@ -101,7 +104,9 @@ h3,h2 {
 
 @media only screen and (max-width: 900px) {
     #bottom {
-        margin-top:-14%;
+        display: block;
+        z-index: -1;
+        margin-top:-8%;
     }
     #center {
         display: block;
