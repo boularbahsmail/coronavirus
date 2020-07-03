@@ -11,6 +11,10 @@ body {
     box-shadow: 0 0 5px lightgray;
     transition: 0.3s;
 }
+#top {
+    width: 600px;
+    margin-top: -1%;
+}
 select {
     position: relative;
     padding: 12px 15px;
