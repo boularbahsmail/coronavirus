@@ -3,7 +3,7 @@
 }
 body {
     /*background-image: url("images/background.svg");*/
-    margin: 2% 0;
+    margin: 0% 0;
 }
 #bottom {
     display: none;
@@ -16,7 +16,7 @@ body {
 }
 #top {
     width: 600px;
-    margin-top: -1%;
+    margin-top: 1%;
 }
 select {
     position: relative;
