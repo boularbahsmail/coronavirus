@@ -5,6 +5,7 @@
 }
 body {
     /*background-image: url("images/background.svg");*/
+    background-color: #fff;
     margin: 0% 0;
 }
 #bottom {
@@ -17,7 +18,7 @@ body {
 #card {
     background-color: white;
     border: none;
-    box-shadow: 0 0 5px lightgray;
+    box-shadow: 0 0 5px #ddf;
     transition: 0.3s;
 }
 #top {

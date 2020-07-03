@@ -106,7 +106,6 @@ var foo = document.querySelector('#footer');
 foo.textContent = "© " + year + " I-COVID-19 | BOULARBAH ISMAIL";
 // console.log(fetchData);
 
-
 const sl = document.getElementById("select").addEventListener('click', () => {
     document.getElementById("select").classList.toggle("start");
 })
