@@ -52,6 +52,7 @@
     <footer class="footer mt-5 py-3 bg-light" id="big">
         <div class="container text-center">
           <span class="text-muted" id="footer"></span><br><br>
+          
 <!-- Load Facebook SDK for JavaScript -->
       <div id="fb-root"></div>
       <script>
@@ -66,15 +67,15 @@
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
         js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        js.src = 'https://connect.facebook.net/ar_AR/sdk/xfbml.customerchat.js';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
       <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat" 
+      <div class="fb-customerchat"
         attribution=setup_tool
         page_id="102732238185952"
-        theme_color="#f08080">
+  theme_color="#f08080">
       </div>
 
         </div>
