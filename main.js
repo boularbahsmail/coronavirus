@@ -1,5 +1,5 @@
 // select items
-const selectElem = document.querySelector('select#select');
+const selectElement = document.querySelector('select#select');
 // new option
 function newOption(data) {
     // get title of data
@@ -10,7 +10,7 @@ function newOption(data) {
         // countires
         optionBox.innerHTML = title;
         // append the new element
-        selectElem.appendChild(optionBox);
+        selectElement.appendChild(optionBox);
     }
 }
 // fetch data _ singleData / manipuate data
@@ -19,7 +19,7 @@ function manipulateData(data) {
     for  (eachItem in data.countryitems[0]){
         const signleData = data.countryitems[0][eachItem];
         newOption(signleData);
-        selectElem.addEventListener('change', function(e) {
+        selectElement.addEventListener('change', function(e) {
             // choose country => show single data
             if(e.target.value == signleData.title) {
                 let totalCases = signleData.total_cases;
