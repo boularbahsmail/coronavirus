@@ -1,0 +1,20 @@
+{
+    "short_name": "Coro🇲🇦-19",
+    "name": "Coro🇲🇦-19",
+    "icons": [
+        {
+            "src": "images/virus.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "images/virus.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#262626",
+    "display": "standalone",
+    "theme_color": "#262626"
+}

@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Ismail Boularbah" />
     <meta name="Description" content="Hi ! , i'm ismail boularbah ♥ & Welcome to my JavaScript web app that can show you any news about coronavirus (covid-19) cases around the world !" />
-    <title>I-covid-19</title>
+    <title>Coro🇲🇦-19</title>
+    <meta name="theme-color" content="#262626" />
+    <link rel="manifest" href="manifest.json" />
     <link rel="icon" type="x-icon" href="images/virus.png" />
     <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />-->
@@ -21,7 +23,7 @@
     <div class="container-fluid bg-light p-5 text-center my-3" id="my3">
         <h1>Covid-19 web tracker</h1>
         <center><h5 id="h5" class="text-muted" style="line-height: 2;max-width: 690px;font-family: 'Muli';">
-          I-covid-19 is a web app to show any<br> news about corona virus covid-19 (SARS-CoV-2)
+          Coro🇲🇦-19 is a web app to show any<br> news about corona virus covid-19 (SARS-CoV-2)
            cases around the world.
         </h5></center>
         </div>
@@ -83,5 +85,11 @@
     "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
         </script> 
     <script src="main.js"></script>
+        <script>
+      // service worker supported by browser
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      };
+    </script>
 </body>
 </html>
